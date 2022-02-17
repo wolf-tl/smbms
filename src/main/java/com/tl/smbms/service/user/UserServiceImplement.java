@@ -27,7 +27,7 @@ public class UserServiceImplement implements UserService {
         userDao = new UserDaoImplement();
     }
 
-    //获取用户信息
+    //用户登录
     public User login(String userCode, String userPassword) {
         //获取数据库连接对象
         Connection conn = BaseDao.getConnection();
